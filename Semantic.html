@@ -3,31 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic HTML</title>
+    <title>Forms in HTML</title>
 </head>
+<style>
+    body{
+        background-color: lightgrey;
+    }
+    input[type="submit"]{
+        color: darkslategray;
+    }
+    h1{
+        text-align: center;
+    }
+    h1:hover{
+        color: blue;
+        text-transform:uppercase
+    }
+    input[type="submit"]:hover{
+        color: blue;
+    }
+    label:hover{
+        color: blue;
+    }
+    </style>
 <body>
-    <header>
-        <h1>CODINGAL</h1>
-        <nav>
-            <a href="#">Home</a> <br>
-                <a href="#">Main Menu</a> <br>
-                <a href="#">Contact</a> <br>
-                    <a href="#">Help</a>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <article>
-                    <h1>Facts about Cars</h1>
-                    <p>Cars have also become symbols of status and personal style, with brands and models reflecting individual preferences. As technology advances, self-driving cars are on the horizon, potentially transforming the way we travel and interact with our vehicles.</p>
-                    <aside>
-                        Cars are vital for connecting people across long distances, transforming how cities and communities function. Their designs continue to innovate, focusing on efficiency, safety, and user-friendly features to meet modern demands.</aside>
-                        <figure><img src="bmw-m4-gt4-f82.webp" height="500" width="800"> <figcaption><b>BMW M4</b></figure>  
-                </article>
-            </section>
-            </main>
-            <footer>
-                <p>For any query, contact us on <b>+446212332827</b> or email us on <b>carquery@gmail.com</b></p>
-                </footer>
+    <form>
+        <fieldset>
+   <legend><h1><u>Details Form</u></h1></legend>
+   <p>This form must be filled out to help us better understand your needs and assist you throughout your journey. Thank you!</p>
+    <label><b>Name:</b></label><br>
+    <input type="text" id="name"><br><br>
+    <label><b>Contact Number:<b></label><br>
+    <input type="Number" id="contact"><br><br>
+    <label><b>Email:<b></label><br>
+    <input type="email" id="email"><br><br>
+    <label>Password</label><br>
+    <input type="password" id="password"><br><br>
+    <label><b>Age:<b></label><br>
+    <input type="number" id="Age"><br><br>
+    <label>Gender: </label><br>
+    <select name="gender" id="gender">
+        <option value="" disabled selected>Select your gender</option>
+        <option value="Man">Man</option>
+        <option value="Woman">Woman</option>
+        <option value="Other">Other</option>
+    </select><br> <br>
+    <label>Current Job: </label><br>
+    <input type="text" id="Current Job"><br><br>
+    <label>Number of Kids: </label><br>
+    <input type="number" id="Number of Kids"><br><br>
+    <label>Kid # 1: </label><br>
+    <input type="text" id="Kid # 1"><br><br>
+    <label>Kid # 2 : </label><br>
+    <input type="text" id="Kid # 2"><br><br>
+    <label>Kid # 3: </label><br>
+    <input type="text" id="Kid # 3"><br><br>
+    <label>Car</label><br> 
+    <select name= "cars" id= "cars"> 
+        <option value="" disabled selected>Select your Car</option>
+        <option value= "audi">Audi</option> 
+        <option value= "bmw">BMW</option> 
+        <option value= "mercedes">Mercedes</option> 
+        <option value= "landcruiser">LandCruiser</option> 
+        <option value= "rangerover">RangerRover</option> 
+    </select><br><br>
+    <input type="submit">
+    </fieldset>
+    </form>
 </body>
 </html>
